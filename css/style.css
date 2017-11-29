@@ -1,0 +1,265 @@
+*{
+  font-family: 'Helvetica', 微軟正黑體, 'robot', arial, sans-serif;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #E9EBEE;
+}
+
+.u-cf:after{
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.col-1-3{
+  border: 1px #fff solid;
+  float: left;
+  width: 33.33333%;
+}
+
+.col-1-2{
+  float: left;
+  width: 50%;
+}
+
+.col-1-1{
+  float: left;
+  width: 100%;
+}
+
+.imgbox-inner{
+  width: 100%;
+  padding-top: calc( 100% * 2 / 3 );
+  height: 0;
+  position: relative;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.image .fri{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba( 192, 192, 192, 0.5);
+  color: #fff;
+  padding-left: 4px;
+}
+
+.head{
+  font-size: 18px;
+}
+
+.navbar{
+  height: 50px;
+  background-color: #3B5998;
+}
+
+.topcontainer{
+  max-width: 1024px;
+  margin: auto;
+}
+
+.search{
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+  padding-left: 16px;
+  border: none;
+}
+
+.wrapper{
+  margin: auto;
+}
+
+.logo{
+  width: 32px;
+  margin: 8px;
+  margin-left: 10%;
+}
+
+.wrapper{
+  height: 100%;
+  background-color: #E9EBEE;
+}
+
+.container{
+  width: 80%;
+  margin: auto auto;  
+}
+
+.backgroundimg{
+  height: 330px;
+  background-image: url("https://khh.travel/FileArtPic.ashx?id=1385&w=1280&h=960");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.personimg{
+  width: 200px;
+  height: 200px;
+  background-image: url("http://c1.peakpx.com/wallpaper/886/817/125/cat-concerns-green-cute-pet-rest-wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  border: solid 3px #fff;
+  position: absolute;
+  bottom: -40px;
+  left: 22px;
+}
+
+.names{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -100px;
+  color: #fff;
+}
+
+.names h2,h5{
+  margin: 0;
+}
+
+.name h2{
+  font-size: 32px;
+}
+
+.name h5{
+  font-size: 16px;
+}
+
+.items{
+  height:50px;
+  background-color: #fff;
+}
+
+.left{
+  width: 45%;
+  float: left;
+}
+
+.right{
+  width: 55%;
+  float: right;
+}
+
+.intro{
+  margin-top: 3px;
+  margin-right: 3px;
+  font-size: 14px;
+  line-height: 20px
+}
+
+.photo{
+  margin-top: 3px;
+  margin-right: 3px;
+}
+
+.friends{
+  margin-top: 3px;
+  margin-right: 3px;
+}
+
+.intro i{
+  width: 20px;
+  text-align: center;
+}
+
+.bgc{
+  background-color: #fff;
+  padding: 16px;
+}
+
+.article{
+/*   border: 1px solid #53565e; */
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+.article h3{
+  display: inline-block;
+  line-height: 25px;
+}
+
+.article h5{
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+
+.article span{
+  color: #2954aa;
+  vertical-align: top;
+  line-height: 25px;
+}
+
+.perimg{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-image: url("http://c1.peakpx.com/wallpaper/886/817/125/cat-concerns-green-cute-pet-rest-wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px){
+  .left{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+  }
+  .intro{
+    text-align: center;
+    vertical-align: left;
+    margin-right: initial;
+  }
+  .photo{
+    margin-right: initial;
+  }
+  .friends{
+    margin-right: initial;
+  }
+  .navbar{
+    height: 60px;
+  }
+  .logo{
+    width: 40px;
+    height: 40px;
+    margin-top: 12px;
+  }
+  .search{
+    height: 30px;
+    width: calc( 80% - 60px - 40px);
+    background-color: #122d63;
+    color: white;
+  }
+  .items{
+    height: 150px;
+  }
+  .personimg{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .names{
+    right: initial;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110%;
+    color: #555;
+  }
+}
